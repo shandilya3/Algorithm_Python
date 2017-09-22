@@ -1,3 +1,13 @@
+# for statement
+words = ['cat', 'window', 'food']
+for w in words:
+    print(w), len(w)
+    
+for num in range(2,10):
+    if num%2 == 0:
+        print "found even", num
+        continue
+    print "found not even", num
 # def is_even(i):
 #     """ hey """
 #     print("hi")
