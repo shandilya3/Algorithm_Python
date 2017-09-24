@@ -1,0 +1,12 @@
+#first unique char in the string
+def UniqueChar(string):
+    for char in string:
+      if string.count(char)==1:
+        print("This is a unique character",char)
+        return true
+UniqueChar("Happy")
+
+
+# how it works
+string2="abracadabra"
+print(string2.count('a'))
