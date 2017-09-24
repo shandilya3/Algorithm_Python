@@ -1,11 +1,18 @@
 
 # Basic Palindrome 
-```
-def Palindrome(word):
-        if word[0]==word[-1]:
-            print("this is a palindrome")
+def palindromeOrNot(string): 
+    i=0
+    j=len(string)-1
+    while(i<j):
+        if(string[i]==string[j]):
+            i+=1
+            j-=1
+            if(i==j):
+                print("palind")
+                break
         else:
-           print("this is not a palindrome")
-                     
-Palindrome("civic")
-```
+            print("not palind")
+            break
+            
+palindromeOrNot("civic")
+
