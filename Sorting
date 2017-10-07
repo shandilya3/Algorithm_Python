@@ -1,0 +1,19 @@
+# Selection Sort
+
+b=[]
+a=[11,25,12,22,64]
+n=len(a)
+for i in range(n):
+    min=i
+    for j in range(i+1,n):
+        print a[j], a[min]
+        if(a[j]<a[min]):
+            print a[j], a[min]
+            min=j
+            
+    a[i], a[min]=a[min],a[i]
+    
+for i in range(n):
+    print(a[i])
+    
+       
