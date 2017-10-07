@@ -1,0 +1,9 @@
+def recur(string, result, pos):
+     if pos==len(string):
+         print(result)
+         return
+     recur(string, result, pos+1)
+     recur(string, result+string[pos], pos+1)
+     
+     
+print recur("abc", " ", 0)
