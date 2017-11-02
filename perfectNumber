@@ -1,0 +1,23 @@
+#Greedy Solution
+class Solution(object):
+    def checkPerfectNumber(self, num):
+        """
+        :type num: int
+        :rtype: bool
+        """
+        s=[]
+        r=num/2+1
+        for i in range(1,r):
+            if num%i==0:
+                s.append(i)   
+        b=sum(s)
+        if(b==num):
+            return True
+        
+        else:
+            return False
+    
+    
+    
+    
+    
